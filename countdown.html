@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="5;URL=https://drive.google.com/file/d/1NFMHQSsMnP6c-gctwR1GXO2ODxclEgV-/view">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ဇာတ်ကား Loading...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #111;
+      color: #fff;
+    }
+    .countdown {
+      font-size: 48px;
+      margin-top: 20px;
+      color: #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 ဇာတ်ကားကို ကြည့်ရန် စောင့်ပါ...</h1>
+  <p>5 စက္ကန့်အတွင်း redirect လုပ်မယ်...</p>
+  <div class="countdown" id="timer">5</div>
+
+  <script>
+    let timeLeft = 5;
+    const timer = document.getElementById('timer');
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timer.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
